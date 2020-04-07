@@ -1,13 +1,14 @@
 import React from "react";
 
-export default function Home() {
+//My Components
+import PostList from './PostList';
 
-    const home_par = "Welcome to my page! We will be learning some more React soon!";
+export default function Home() {
 
   return (
     <div className="container">
       <h3 className="center black-text">Home</h3>
-      <p className="card black-text lighten-2" style={ {padding: 20}}>{home_par}</p>
+      <PostList />
     </div>
   );
 }
